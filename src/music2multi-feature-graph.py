@@ -1,9 +1,5 @@
 from music21 import *
-from Note import *
-from Chord import *
-from Rest import *
-from KeyNode import *
-from Node import *
+from src import Note, Chord, Rest, KeyNode, Node
 import networkx as nx
 
 
