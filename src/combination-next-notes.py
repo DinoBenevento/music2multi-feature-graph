@@ -5,8 +5,15 @@ import pickle
 import itertools
 
 
-
-def set_combinations(voices_graphs, union_graph, dicts, index_start_graph, name_comp):
+'''
+Function to walk int graphs presented in voices_graph and in union_graph joined.
+:param voice_graphs: list of graphs 
+:param union_graph: graph join of graphs in voice_graph
+:param dicts: list of dictionaries
+:param index_start_graph: list of the first node's index of every single graph in union_graph and in union_graph joined.
+:param name_comp: composition_name
+'''
+def walk_graphs(voices_graphs, union_graph, dicts, index_start_graph, name_comp):
     cache_graph = ''
     iteration_time = 0
     count_file_save = 0

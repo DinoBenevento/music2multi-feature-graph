@@ -1,5 +1,9 @@
 
 
+'''
+Dictory settings mapping every notes, note's duration, note's octave.
+'''
+
 def create_notes_dictionary():
     dicts = []
     DictNotes = {'C': 1, 'C#': 2, 'D-': 3, 'D': 4, 'D#': 5, 'E-': 6, 'E': 7, 'F': 8, 'F#': 9, 'G-': 10, 'G': 11, 'G#': 12, 'A': 13, 'A-': 14, 'A#': 15, 'B-': 16, 'B': 17, 'Rest': 0, 'Mute': -1, 'E#': 18, 'B#': 19}
