@@ -5,6 +5,11 @@ import networkx as nx
 
 '''
 All nodes are linked with the KeyNode and every nodes is linked to previously node and following node.
+:param G: The input graph
+:param idGraph: input graph's number id 
+:param key_node: KeyNode's id of the graph G
+:param node_count: node's number id
+:param keyElement: KeyNode of the graph G
 '''
 def link_voice_notes(G, idGraph, key_node, node_count, keyElement):
     if node_count == 1:
@@ -24,6 +29,8 @@ def link_voice_notes(G, idGraph, key_node, node_count, keyElement):
 '''
 top function provides to link all wrapped notes witch duration matching with the other notes played from the other voice.
 the matching criteria is explained in READme.
+
+:param voices_graph: list of graphs
 '''
 def top(voices_graphs):
     i = 0
@@ -116,6 +123,8 @@ def top(voices_graphs):
 Function to trasform a musical composition file (suggest MIDI or mxl files) in an undirected graph.
 The graph has a first node (KeyNode) containing the composition metadata, the other Nodes contains music data.
 All nodes are linked with the KeyNode and every nodes is linked to previously node and following node.
+
+:param musical_composition_file: musical composition file
 '''
 def get_notes_chords_rests(musical_composition_file):
     if isinstance(musical_composition_file, str):
