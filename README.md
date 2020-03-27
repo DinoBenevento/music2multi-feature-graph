@@ -10,7 +10,9 @@ To extract the elements Notes, Chord, Rest and music metadata from music files, 
 
 ## Graph Structure
 The Python library NetworkX is used to create a graph, which maps the music composition and, in particular, every graph represents a music instrument part (voice).
-The graph contains information into nodes, that are wrapped in two different structures: (a)Key, (b)Node.
+The graph contains information into nodes, that are wrapped in two different structures: 
+- Key
+- Node.
 
 For every voice into music file is created a graph, the KeyNode has double function; one contains all musical composition metadata such as Metromark, Time Signature and others, and second is the marker for a voice, because for every voice into the musical composition there is a graph, while the second structure is a wrapper for the classes Note, Rest or Chord.
 Every Node is linked with an edge to the relative KeyNode and KeyNodes are linked each others.
