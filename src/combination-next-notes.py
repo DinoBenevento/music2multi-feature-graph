@@ -30,7 +30,9 @@ def walk_graphs(voices_graphs, union_graph, dicts, index_start_graph, name_comp)
                 return
 
 
-
+'''
+Function to set all the possible notes combinations after the part of the union_graph indicated from the index in the list index_start_graph.
+'''
 def create_combinations(graphs, iteration_time, dicts, cache_graph, union_graph, index_start_graph, count_file_save, name_comp):
     gt = nx.Graph()
     if iteration_time == 0:
@@ -116,7 +118,7 @@ def save_combinations(reduced_combination, union_graph, iter, count_combination,
                     proc_note_pitch.append("Mute")
                     proc_note_octave.append(0)
                     proc_note_duration.append(0.0)
-            path = 'C:/Users/io/Desktop/Proc_Voices_Dataset/' + str(n_comp)+'/'
+            path = 'C:../Proc_Voices_Dataset/' + str(n_comp)+'/'
             if not os.path.exists(path):
                 os.mkdir(path)
             iterString = str(iter) + str(count_combination) + str(count_file)
